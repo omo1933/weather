@@ -1,0 +1,43 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Zip Code</title>
+	<meta name="description" content="A frontend dev aptitude test by Deep Space Robots.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header style="text-align: center;">
+		<h1>Weather</h1>
+	</header>
+	<div style="text-align: center">
+		<h2 id="statement">Fill out the form below to check the Weather:</h2>
+	</div>
+	<form action="#" class="form fancy-form">
+		<fieldset>
+			<legend>Check Weather</legend>
+			<br />
+			<div>
+				<div id="zipbox" class="control-group">
+					<label for="city">Weather</label>
+					<input id="city" type="text"  name="city"
+						placeholder="Type your City" /><p id="values"></p>
+
+				</div>
+			</div>
+			<div>
+				<button class='btn btn-success btn-large' onclick='result()'>Submit</button>
+			</div>
+		</fieldset>
+	</form>
+</body>
+<script src="script.js"></script>
+<script>
+	!function (o) { console.old = console.log, console.log = function () { var n, e, t = ""; for (e = 0; e < arguments.length; e++)t += '<span class="log-' + typeof (n = arguments[e]) + '">', "object" == typeof n && "object" == typeof JSON && "function" == typeof JSON.stringify ? t += JSON.stringify(n) : t += n, t += "</span>&nbsp;"; o.innerHTML += t + "<br>", console.old.apply(void 0, arguments) } }
+		(document.body);
+</script>
+
+</html>
